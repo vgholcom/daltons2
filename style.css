@@ -1,0 +1,267 @@
+/*
+Theme Name: Daltons
+Theme URI: n/a
+Author: Tori Holcomb
+Author URI: vholcomb@syr.edu
+Description: 
+Version: 1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+.alignright {
+  float:right;
+  margin: 5px 0 20px 20px;
+}
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%; /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center;
+}
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0;
+}
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px;
+}
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto;
+}
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px;
+}
+/* Global */
+body {
+  background-color: rgb(249,249,237);
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
+a:hover, a:focus {
+  text-decoration: none;
+  color:rgb(249,249,237);
+}
+
+/* header */
+.navbar-default {
+  background-color: rgb(237,237,213);
+  border-bottom: 5px solid rgb(186,154,115);
+}
+.navbar-brand {
+    float: left;
+    font-size: 18px;
+    height: 75px;
+    line-height: 20px;
+    width: 275px;
+    padding: 10px 0px 10px 15px;
+}
+.navbar-brand img{
+  max-width: 100%;
+}
+#main-navbar-collapse {
+  padding-top: 13px;
+}
+.nav > li > a {
+  font-size: 18px;
+  text-transform: lowercase;
+}
+#searchform {
+  position: relative;
+}
+.navbar-form {
+  padding-top: 16px;
+}
+.navbar-form button {
+  border: none;
+  background: none;
+  position: absolute;
+  right: 5px;
+  top:2px;
+}
+.navbar-default .navbar-nav .current-menu-item a {
+  color:#333;
+}
+/* home-page.php */
+#featured {
+  margin-top: 20px;
+  background-color: rgb(94,133,80);
+}
+#featured article {
+  border-top: 5px solid rgb(186,154,115);
+  border-bottom: 5px solid rgb(186,154,115);
+  border-right: 5px solid rgb(186,154,115);
+  padding: 35px;
+  color: rgb(249,249,237);
+}
+#featured article:last-of-type {
+  border-right:none;
+}
+#featured article img {
+  border: 2px solid #5d5d5d;
+}
+#featured article h2 {
+  font-weight: 300;
+}
+.home #carousel {
+  border-top: 5px solid rgb(186,154,115);
+  border-bottom: 5px solid rgb(186,154,115);
+}
+
+/* about.php */
+#about {
+  background-color: rgb(94,133,80);
+  color: rgb(249,249,237);
+  font-size: 16px;
+  border-top: 5px solid rgb(186,154,115);
+  border-bottom: 5px solid rgb(186,154,115);
+}
+#about h1, h2 {
+  text-align: center;
+}
+#about span {
+  padding: 5px 0;
+}
+#about .content {
+  border-left: none;
+  padding: 35px;
+}
+#about .hours,
+#about .contact {
+  padding: 35px;
+}
+#about .hours {
+  padding-bottom: 0px;
+}
+#about .hours strong {
+  padding-right: 10px;
+}
+#about .contact {
+  border-top: none;
+}
+#about .carousel {
+  width: 100%;
+}
+#about .carousel-inner img {
+  max-height: 450px;
+  width: 100%;
+}
+#about .map {
+  padding-top:35px;
+  padding-bottom: 15px;
+}
+#googleMap {
+  margin:0 auto;
+}
+#about .location {
+  padding-bottom: 35px;
+}
+
+/* home.php */
+.blog article,
+.tax-inventorycategory article,
+.page-template-events-php article,
+.search article {
+  background-color: rgb(94,133,80);
+  border: 5px solid rgb(186,154,115);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-left: none;
+  border-right: none;
+}
+.blog article:first-of-type,
+.page-template-events-php article:first-of-type,
+.tax-inventorycategory article:first-of-type {
+  margin-top: 0;
+}
+.blog article,
+.page-template-events-php article,
+.tax-inventorycategory article,
+.search article {
+  color: rgb(249,249,237);
+}
+.blog .more-link,
+.search .more-link {
+  color: rgb(249,249,237);
+  float: right;
+}
+/* single.php */
+.single {
+  text-align: none;
+}
+.single h2 {
+  text-align: left;
+}
+.inventory {
+  text-align: center;
+  background-color: rgb(94,133,80);
+  border: 5px solid rgb(186,154,115);
+  color:rgb(249,249,237);
+  padding: 15px;
+}
+/* footer */
+footer {
+  margin-top: 20px;
+  height: 50px;
+}
+
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}

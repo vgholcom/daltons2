@@ -1,0 +1,113 @@
+/**
+ * Cobalt Admin Styles
+ */
+
+/** THEME OPTIONS **/
+#theme-options-frame .inside hr {
+    margin: 10px 0;
+    color: #fff;
+    opacity: 0.5;
+}
+#theme-options-frame .inside label {
+    display: inline-block;
+    line-height: 30px;
+    margin-right: 10px;
+    width: 70px;
+    text-align: right;
+}
+#theme-options-frame input[type="text"] {
+    height: 30px;
+}
+#theme-options-frame #sortable-pub li,
+#theme-options-frame #sortable-draft li {
+    max-width: 35%;
+    border: 1px solid black;
+    padding: 5px;
+    cursor: move;
+}
+#theme-options-frame #sortable-draft li {
+    background-color: #ddd;
+}
+#theme-options-frame #sortable-pub li b,
+#theme-options-frame #sortable-draft li b {
+    text-transform: uppercase;
+}
+#theme-options-frame #sortable-pub,
+#theme-options-frame #sortable-draft {
+    width: 100%;
+}
+#theme-options-frame #sortable-pub li i,
+#theme-options-frame #sortable-draft li i {
+    float: right;
+}
+#footer-options .inside label {
+    width: 105px;
+}
+#footer-options .inside input[type="tel"] {
+    height: 30px;
+}
+#footer-options .inside input[type="text"] {
+    width: 400px;
+}
+
+/** MEDIA PANEL **/
+#daltons-about-slide-meta,
+#daltons-inventory-gallery-meta {
+    width: 100%;
+}
+#daltons-about-slide-meta td,
+#entry-meta td,
+#daltons-inventory-gallery-meta td {
+    display: block;
+    width: 100%;
+}
+#daltons-about-slide-meta .sort,
+#entry-meta .sort,
+#daltons-inventory-gallery-meta .sort {
+    float: right;
+    cursor: move;
+    margin-left: 10px;
+}
+#daltons-about-slide-meta .remove-slide,
+#daltons-about-slide-meta .add-slide,
+#daltons-inventory-gallery-meta .remove-slide,
+#daltons-inventory-gallery-meta .add-slide {
+    margin: 0;
+    cursor: pointer;
+    border-radius: 0;
+    box-shadow: none;
+}
+#daltons-about-slide-meta .about-slide,
+#entry-meta .data-entry,
+#daltons-inventory-gallery-meta .inventory-slide {
+    border: 1px dotted #ccc;
+    padding: 10px;
+    margin: 0 10px 10px 0;
+    width: 234px;
+    display: inline-table;
+    vertical-align: top;
+}
+#daltons-about-slide-meta .about-slide label,
+#daltons-inventory-gallery-meta .inventory-slide label {
+    text-align: right;
+    display: inline-block;
+    width: 83px;
+}
+#daltons-about-slide-meta .about-slide input[type="button"],
+#daltons-inventory-gallery-meta .inventory-slide input[type="button"] {
+    border-radius: 0;
+    box-shadow: none;
+    margin-left: -4px;
+}
+#daltons-about-slide-meta .about-slide .preview-container,
+#daltons-inventory-gallery-meta .inventory-slide .preview-container {
+    max-height: 206px;
+    max-width: 206px;
+    overflow: hidden;
+    display: block;
+    margin-top: 10px;
+}
+#daltons-about-slide-meta .about-slide .preview-container img,
+#daltons-inventory-gallery-meta .inventory-slide .preview-container img {
+    width: 100%;
+}
