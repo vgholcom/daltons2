@@ -22,11 +22,12 @@ get_header(); ?>
 					if ($i ==1 ) {?>
 						<div class="row"><?php
 					}
+					$t_id = $child;
 					$cat_meta = get_option( "category_$t_id");
    					$img_src = wp_get_attachment_image_src( $cat_meta['img'], 'full' );
 					$link = get_term_link( $category );
 					$term = get_term($child,'inventorycategory');?>
-					<a class="col-md-3 inventory" href='<?php echo $link; ?>'><?php 
+					<a class="col-md-3 col-sm-12 inventory" href='<?php echo $link; ?>'><?php 
 						if($cat_meta['img'] != '') { ?>
 							<img id="inventory_image" class="img-responsive" src="<?php if($cat_meta['img'] != '') echo $img_src[0]; ?>"/><?php
 						} ?>

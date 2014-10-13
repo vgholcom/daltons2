@@ -2,7 +2,7 @@
 Theme Name: Daltons
 Theme URI: n/a
 Author: Tori Holcomb
-Author URI: vholcomb@syr.edu
+Author URI: vholcomb@live.com
 Description: 
 Version: 1
 License: GNU General Public License v2 or later
@@ -130,6 +130,9 @@ a:hover, a:focus {
 .navbar-default .navbar-nav .current-menu-item a {
   color:#333;
 }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+}
 /* home-page.php */
 #featured {
   margin-top: 20px;
@@ -155,7 +158,12 @@ a:hover, a:focus {
   border-top: 5px solid rgb(186,154,115);
   border-bottom: 5px solid rgb(186,154,115);
 }
-
+.home .carousel-inner img {
+  margin: 0 auto;
+}
+.home h2 {
+  text-align: center;
+}
 /* about.php */
 #about {
   background-color: rgb(94,133,80);
@@ -164,8 +172,8 @@ a:hover, a:focus {
   border-top: 5px solid rgb(186,154,115);
   border-bottom: 5px solid rgb(186,154,115);
 }
-#about h1, h2 {
-  text-align: center;
+.page-template-about-php #about h1, .page-template-about-php #about h2 {
+  text-align: right;
 }
 #about span {
   padding: 5px 0;
@@ -173,10 +181,12 @@ a:hover, a:focus {
 #about .content {
   border-left: none;
   padding: 35px;
+  border-right: 5px solid rgb(186,154,115);
 }
 #about .hours,
 #about .contact {
   padding: 35px;
+  text-align: right;
 }
 #about .hours {
   padding-bottom: 0px;
@@ -189,10 +199,11 @@ a:hover, a:focus {
 }
 #about .carousel {
   width: 100%;
+  border-bottom: 5px solid rgb(186,154,115);
 }
 #about .carousel-inner img {
   max-height: 450px;
-  width: 100%;
+  margin: 0 auto;
 }
 #about .map {
   padding-top:35px;
@@ -202,7 +213,7 @@ a:hover, a:focus {
   margin:0 auto;
 }
 #about .location {
-  padding-bottom: 35px;
+  padding: 25px;
 }
 
 /* home.php */
@@ -246,8 +257,12 @@ a:hover, a:focus {
   text-align: center;
   background-color: rgb(94,133,80);
   border: 5px solid rgb(186,154,115);
+  border-left: none;
   color:rgb(249,249,237);
   padding: 15px;
+}
+.inventory:first-of-type {
+  border-left: 5px solid rgb(186,154,115);
 }
 /* footer */
 footer {
@@ -264,4 +279,51 @@ footer {
   display: -webkit-flex;
   display: -ms-flexbox;
   display:         flex;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) { 
+  .row-eq-height {
+    display: block;
+  }
+  #searchform input {
+    width: 100%
+  }
+  .navbar-form button {
+    width: auto;
+  }
+  #featured article {
+    border:none;
+    border-top: 5px solid rgb(186,154,115);
+  }
+  #featured article:last-of-type {
+    border-bottom: 5px solid rgb(186,154,115);
+  }
+  .page-template-about-php #about h1, .page-template-about-php #about h2 {
+    text-align: center;
+  }
+  #about .content {
+    border-right: none;
+  }
+  #about .hours,
+  #about .contact {
+    text-align: center;
+  }
+  #about #carousel {
+    border-top: 5px solid rgb(186,154,115);
+    border-bottom: 5px solid rgb(186,154,115);
+  }
+  #about .location {
+    padding: 35px;
+  }
+  .inventory {
+    color: rgb(249,249,237);
+    display: block;
+    padding: 35px;
+    border-bottom: none;
+  }
+  .inventory:last-of-type {
+    border-bottom: 5px solid rgb(186,154,115);
+  }
+  .navbar-default .navbar-nav > li > a {
+    text-align: center;
+  }
 }
